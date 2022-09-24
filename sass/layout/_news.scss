@@ -1,0 +1,50 @@
+.news {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+        @include tablet { 
+            margin-bottom: 50px;
+        }
+    }
+   &__list {
+        @include flex-wrap (flex, wrap, column, 30px );
+        @include tablet { 
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    &__items {
+        width: 100%;
+        background-color: var(--secondary-background-color);
+        @include tablet {
+            width: calc((100% - 30px) / 2);
+          }
+          @include desktop {
+            width: calc((100% - 60px) / 3);
+          }
+    }
+    &__content { 
+        padding: 17px 30px 50px;
+    }
+    &__subtitle {
+        @include fonts (700, 17px, 1.41, 0.03em);
+        color: #4F4F4F;
+        margin-bottom: 7px;
+    }
+    &__date, 
+    &__text { 
+        @include fonts (null, 15px, 1.6, 0.03em);
+        color: #BDBDBD;
+    }
+    &__text { 
+        color: #333333;
+        margin-top: 10px;
+    }
+    &__btn {
+        margin-left: auto;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    } 
+}

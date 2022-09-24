@@ -1,0 +1,74 @@
+.form {
+    padding: 65px 0;
+    &__title {
+        text-align: center;
+        margin-bottom: 9px;
+    }
+    &__subtitle {
+        margin-bottom: 30px;
+        text-align: center;
+        color: var(--text-color);
+    }
+    &__text-privacy { 
+        display: block;
+        text-align: center;
+        color: #909090;
+        margin-top: 20px;
+    }
+}
+
+.forms {
+    @include flex (flex, center, center, 30px );
+    flex-direction: column;
+    @include tablet { 
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__field {
+        position: relative; 
+        width: 100%;  
+        @include tablet { 
+            width: calc(100% - 50px);
+          }
+          @include desktop { 
+            width: calc((100% - 90px) / 4);;
+          }
+    }
+    &__label {
+        position: absolute;
+        left: 39px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include fonts (null, 15px, 1.6, 0.03em);
+        color: #BDBDBD;
+        transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+    &__input {
+        padding: 10px 35px;
+        color: var(--text-color);
+        width: 100%;
+        border: 1px solid #E7E7E7;
+        transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:not(:placeholder-shown) + .forms__label { 
+            transform: translateY(-45px);
+        }
+        &:focus { 
+            outline: 1px solid var(--primary-accent-color);
+        }
+    }
+    &__icon {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: var(--primary-accent-color);
+        
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__btn {
+        background-color: transparent;
+    }
+
+}
+

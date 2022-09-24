@@ -1,0 +1,24 @@
+
+@import './base/reset';
+@import './base/global';
+
+@import './components/container';
+@import './components/btn';
+@import './components/title';
+
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/hidden';
+
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/quote';
+@import './layout/about';
+@import './layout/benefits';
+@import './layout/promotion';
+@import './layout/news';
+@import './layout/testimonials';
+@import './layout/form';
+@import './layout/footer';
+@import './layout/news/news.scss';
