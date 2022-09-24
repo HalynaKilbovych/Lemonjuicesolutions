@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./css/main.min.css" />
+    <title>News</title>
+  </head>
+
+<body>
+    <header class="header">
+
+        <div class="header-top container">
+          <div class="logo">
+            <a href="" class="logo__link">
+              <img src="./img/logo.png" alt="logo" width="180" height="56"></a>
+          </div>
+          <div>
+            <address class="adress">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <svg class="address__icon" width="23" height="23">
+                    <use href="./img/icons-lemon.svg#icon-location"></use>
+                  </svg>
+                  <a class="address__link link" 
+                  href=""                   
+                  target="_blank"
+                  rel="noopener noreferrer nofollow">7041 Grand national drive, suite  230, Orlando, FL</a></li>
+                <li class="address__item">
+                  <svg class="address__icon" width="23" height="23">
+                    <use href="./img/icons-lemon.svg#icon-phone-call"></use>
+                  </svg>
+                  <a class="address__link link" 
+                  href="tel:+32819(321) 754-1033">32819(321) 754-1033</a></li>
+                <li class="address__item">
+                  <svg class="address__icon" width="23" height="23">
+                    <use href="./img/icons-lemon.svg#icon-email"></use>
+                  </svg>
+                  <a class="address__link link"
+                  href="mailto:info@lemonjulce.biz">info@lemonjulce.biz</a></li>
+              </ul>
+            </address>
+          </div>
+        </div>
+
+        <div class="header-bottom container ">
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item"><a class="nav__link link" href="#">Home</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">Covid-19</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">Services
+                <svg class="nav__icon" width="10" height="10">
+                  <use href="./img/icons-lemon.svg#icon-header-arrow"></use>
+                </svg>
+              </a>
+                <ul class="nav__submenu list">
+                  <li class="nav__submenu-item"><a href="#" class="nav__submenu-link link">link</a></li>
+                  <li class="nav__submenu-item"><a href="#" class="nav__submenu-link link">link</a></li>
+                  <li class="nav__submenu-item"><a href="#" class="nav__submenu-link link">link</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a class="nav__link link" href="./news.html">News</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">About</a></li>
+              <li class="nav__item"><a class="nav__link link" href="#">Properties</a></li>
+            </ul>
+          </nav>
+          <div class="header-buttons">
+            <a class="button-border">Owners
+              <svg class="button-border__icon">
+                <rect class="button-border__border">
+                </rect>
+              </svg>
+            </a>
+            <a class="visibility-button">
+              <svg class="visibility-button__icon" width="25" height="25">
+                <use href="./img/icons-lemon.svg#icon-visibility"></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="header-mob">
+          <div class="logo mob-logo">
+            <a href="" class="logo__link"><img src="./img/logo.jpg" alt="logo"></a>
+          </div>
+          <button type="button" class="mob-menu__open-btn" data-menu-open>
+            <svg class="mob-menu__icon" width="40" height="40">
+              <use href="./img/icons-lemon.svg#icon-menu_open"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="backdrop is-hidden" data-menu>
+          <div class="mob-menu" >
+            <button type="button" class="mob-menu__close-btn" data-menu-close>
+              <svg class="mob-menu__icon" width="40" height="40">
+                <use href="./img/icons-lemon.svg#icon-menu_close"></use>
+              </svg>
+            </button>
+            <div class="container">
+              <nav class="mob-menu__nav">
+                <ul class="mob-menu__list list">
+                  <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Home</a></li>
+                  <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Covid-19</a></li>
+                  <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Services</a></li>
+                  <li class="mob-menu__item"><a class="mob-menu__link link" href="#">News</a></li>
+                  <li class="mob-menu__item"><a class="mob-menu__link link" href="#">About</a></li>
+                  <li class="mob-menu__item"><a class="mob-menu__link link" href="#">Properties</a></li>
+                </ul>
+              </nav>
+              <address class="mob-menu__address">
+                <ul class="mob-menu__address-list list">
+                  <li class="mob-menu__address-item">
+                    <svg class="mob-menu__address-icon" width="23" height="23">
+                      <use href="./img/icons-lemon.svg#icon-phone-call"></use>
+                    </svg>
+                    <a class="mob-menu__address-link link" 
+                      href="tel:+32819(321) 754-1033">32819(321) 754-1033</a></li>
+                  <li class="mob-menu__address-item">
+                    <svg class="mob-menu__address-icon" width="23" height="23">
+                      <use href="./img/icons-lemon.svg#icon-email"></use>
+                    </svg>
+                    <a class="mob-menu__address-link link"
+                      href="mailto:info@lemonjulce.biz">info@lemonjulce.biz</a></li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1 class="page-header__title title">News</h1>
+            <ul class="page-header__nav-list list">
+                <li class="page-header__nav-item"><a class="page-header__nav-link link" href="#">Home/</a></li>
+                <li class="page-header__nav-item"><a class="page-header__nav-link link" href="#">Blog</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__wrapper-social">
+            <div class="footer__wrapper-logo-txt">
+              <div class="logo footer__logo">
+                <a href="" class="logo__link">
+                  <img src="./img/logo.png" alt="logo" width="180" height="56"></a>
+              </div>
+              <p class="footer__text">
+                The very start of Lemonjuice Capital in timeshares in 2013 was from realization that the aggregate value of timeshares is a fraction of the real estate value. 
+              </p>
+            </div>
+            <div class="footer__media">
+              <h3 class="footer__header">Follow us</h3>
+              <ul class="social-list list">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link">
+                    <svg class="social-list__icon" width="15" height="15" >
+                      <use href="./img/icons-lemon.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="" class="social-list__link">
+                    <svg class="social-list__icon" width="15" height="15" >
+                      <use href="./img/icons-lemon.svg#icon-instagram-1"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="footer__wrapper-nav">
+            <h3 class="footer__header">
+              Quick links
+            </h3>
+            <nav class="nav footer__nav">
+              <ul class="nav__list footer__nav-list list">
+                <li class="nav__item"><a class="nav__link footer__nav-link link" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__link footer__nav-link link" href="#">Covid-19</a></li>
+                <li class="nav__item"><a class="nav__link footer__nav-link link" href="#">Services</a></li>
+                <li class="nav__item"><a class="nav__link footer__nav-link link" href="#">News</a></li>
+                <li class="nav__item"><a class="nav__link footer__nav-link link" href="#">About</a></li>
+                <li class="nav__item"><a class="nav__link footer__nav-link link" href="#">Properties</a></li>
+              </ul>
+            </nav>
+            <a class="button-border footer__btn">Owners
+              <svg class="button-border__icon">
+                <rect class="button-border__border">
+                </rect>
+              </svg>
+            </a>
+          </div>
+    
+          <div class="footer__wrapper-contact">
+            <h3 class="footer__header">
+              Contact us
+            </h3>
+            <address class="address">
+              <ul class="address__list footer__address-list list">
+                <li class="address__item footer__address-item">
+                  <svg class="address__icon" width="23" height="23">
+                    <use href="./img/icons-lemon.svg#icon-location"></use>
+                  </svg>
+                  <a class="address__link footer__address-link link" 
+                  href=""                   
+                  target="_blank"
+                  rel="noopener noreferrer nofollow">7041 Grand national drive, suite  230, Orlando, FL</a></li>
+                <li class="address__item footer__address-item">
+                  <svg class="address__icon" width="23" height="23">
+                    <use href="./img/icons-lemon.svg#icon-phone-call"></use>
+                  </svg>
+                  <a class="address__link footer__address-link link" 
+                  href="tel:+32819(321) 754-1033">32819(321) 754-1033</a></li>
+                <li class="address__item footer__address-item">
+                  <svg class="address__icon" width="23" height="23">
+                    <use href="./img/icons-lemon.svg#icon-email"></use>
+                  </svg>
+                  <a class="address__link footer__address-link link"
+                  href="mailto:info@lemonjulce.biz">info@lemonjulce.biz</a></li>
+              </ul>
+            </address>
+          </div>
+    
+        </div>
+        
+      </footer>
+  
+      <script src="./js/menu.js"></script>
+</body>

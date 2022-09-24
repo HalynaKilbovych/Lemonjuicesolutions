@@ -1,0 +1,41 @@
+.promotion {
+    background-image: linear-gradient(179.23deg, #000000 0.65%, rgba(0, 0, 0, 0) 120%), url(../img/hero-bg.jpg);
+    @include background; 
+
+    padding: 130px 0;
+    &__list {
+        @include flex-wrap (flex, null, column, 50px);
+        align-items: center;
+        @include tablet { 
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    &__item {
+        @include flex-wrap (flex, null, column, 10px);  
+        
+        width: 100%;
+        @include tablet {
+          width: calc((100% - 60px) / 3);
+          }
+        @include desktop { 
+          padding: 31px 53px 45px;
+        }
+    
+        background-image: url(../img/promo-bg.png);
+        background-repeat: no-repeat;
+        background-size: 192px;
+    }
+    &__numbers {
+        font-family: 'Playfair Display';
+        @include fonts (null, 100px, 1.33, 0.01em);
+        color: #FEE600;
+        text-align: center;
+    }
+    &__text {
+        @include fonts (700, 15px, 1.6, 0.01em);
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        }
+}
