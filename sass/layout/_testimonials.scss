@@ -7,31 +7,16 @@
     
     &__container { 
         @include desktop { 
-            @include flex (flex, center, space-between, null );
+            @include flex (flex, center, center, 160px);
         }
     }
     &__title {
         margin-bottom: 50px;
         text-align: center
     }  
-    &__list {
-        @include flex-wrap (flex, wrap, column, 30px );
-        @include tablet { 
-            flex-direction: row;
-            justify-content: center;
-        }
-    }  
     &__item {
-        width: 100%;
         padding: 35px;
         background-color: var(--primary-background-color);
-        @include tablet {
-            width: calc((100% - 30px)/2);
-           
-          }
-        @include desktop { 
-            width: 374px;
-        }
     }
     
     &__img { 

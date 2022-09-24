@@ -15,6 +15,10 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="./css/main.min.css" />
     <title>Home page</title>
   </head>
@@ -348,34 +352,79 @@
       <section class="testimonials">
         <div class="container testimonials__container">
           <h2 class="testimonials__title title">Testimonials</h2>
-          <ul class="testimonials__list list">
-            <li class="testimonials__item">
-              <div class="testimonials__img">
-                <img src="./img/testimonials-1.jpg" alt="photo Stephanie Engle" width="120" height="120">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide testimonials__item">
+                <div class="testimonials__img">
+                  <img src="./img/testimonials-1.jpg" alt="photo Stephanie Engle" width="120" height="120">
+                </div>
+                <h3 class="testimonials__subtitle">“It’s is prime property located right on the sound!”</h3>
+                <p class="testimonials__text">
+                  “We love staying at Marina Bay Resort! It is prime property located on the sound! They
+                  have a wonderful outdoor heated pool overlooking the sound and a great very large hot
+                  tub in their courtyard. They have a game room. A nice place to stay and not
+                  over-prices!”
+                </p>
+                <p class="testimonials__name">Stephanie Engle</p>
               </div>
-              <h3 class="testimonials__subtitle">“It’s is prime property located right on the sound!”</h3>
-              <p class="testimonials__text">
-                “We love staying at Marina Bay Resort! It is prime property located on the sound! They
-                have a wonderful outdoor heated pool overlooking the sound and a great very large hot
-                tub in their courtyard. They have a game room. A nice place to stay and not
-                over-prices!”
-              </p>
-              <p class="testimonials__name">Stephanie Engle</p>
-            </li>
-            <li class="testimonials__item">
-              <div class="testimonials__img">
-                <img src="./img/testimonials-1.jpg" alt="photo Stephanie Engle" width="120" height="120">
+              <div class="swiper-slide testimonials__item">
+                <div class="testimonials__img">
+                  <img src="./img/testimonials-1.jpg" alt="photo Stephanie Engle" width="120" height="120">
+                </div>
+                <h3 class="testimonials__subtitle">“It’s is prime property located right on the sound!”</h3>
+                <p class="testimonials__text">
+                  “We love staying at Marina Bay Resort! It is prime property located on the sound! They
+                  have a wonderful outdoor heated pool overlooking the sound and a great very large hot
+                  tub in their courtyard. They have a game room. A nice place to stay and not
+                  over-prices!”
+                </p>
+                <p class="testimonials__name">Stephanie Engle</p>
               </div>
-              <h3 class="testimonials__subtitle">“It’s is prime property located right on the sound!”</h3>
-              <p class="testimonials__text">
-                “We love staying at Marina Bay Resort! It is prime property located on the sound! They
-                have a wonderful outdoor heated pool overlooking the sound and a great very large hot
-                tub in their courtyard. They have a game room. A nice place to stay and not
-                over-prices!”
-              </p>
-              <p class="testimonials__name">Stephanie Engle</p>
-            </li>
-          </ul>
+              <div class="swiper-slide testimonials__item">
+                <div class="testimonials__img">
+                  <img src="./img/testimonials-1.jpg" alt="photo Stephanie Engle" width="120" height="120">
+                </div>
+                <h3 class="testimonials__subtitle">“It’s is prime property located right on the sound!”</h3>
+                <p class="testimonials__text">
+                  “We love staying at Marina Bay Resort! It is prime property located on the sound! They
+                  have a wonderful outdoor heated pool overlooking the sound and a great very large hot
+                  tub in their courtyard. They have a game room. A nice place to stay and not
+                  over-prices!”
+                </p>
+                <p class="testimonials__name">Stephanie Engle</p>
+              </div>
+              <div class="swiper-slide testimonials__item">
+                <div class="testimonials__img">
+                  <img src="./img/testimonials-1.jpg" alt="photo Stephanie Engle" width="120" height="120">
+                </div>
+                <h3 class="testimonials__subtitle">“It’s is prime property located right on the sound!”</h3>
+                <p class="testimonials__text">
+                  “We love staying at Marina Bay Resort! It is prime property located on the sound! They
+                  have a wonderful outdoor heated pool overlooking the sound and a great very large hot
+                  tub in their courtyard. They have a game room. A nice place to stay and not
+                  over-prices!”
+                </p>
+                <p class="testimonials__name">Stephanie Engle</p>
+              </div>
+              <div class="swiper-slide testimonials__item">
+                <div class="testimonials__img">
+                  <img src="./img/testimonials-1.jpg" alt="photo Stephanie Engle" width="120" height="120">
+                </div>
+                <h3 class="testimonials__subtitle">“It’s is prime property located right on the sound!”</h3>
+                <p class="testimonials__text">
+                  “We love staying at Marina Bay Resort! It is prime property located on the sound! They
+                  have a wonderful outdoor heated pool overlooking the sound and a great very large hot
+                  tub in their courtyard. They have a game room. A nice place to stay and not
+                  over-prices!”
+                </p>
+                <p class="testimonials__name">Stephanie Engle</p>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
       </section>
 
@@ -517,7 +566,8 @@
       </div>
       
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
