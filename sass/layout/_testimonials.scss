@@ -1,5 +1,4 @@
 .testimonials {
-    background-color: aqua;
     padding: 100px 0;
     background-color: var(--secondary-background-color);
     background-image: url('../img/map-bg.png');
@@ -15,6 +14,12 @@
         margin-bottom: 50px;
         text-align: center
     }  
+    
+}
+
+.swiper { 
+    padding: 0 40px 50px;
+
     &__item {
         padding: 35px;
         background-color: var(--primary-background-color);
@@ -48,4 +53,21 @@
     &__name {
         @include fonts (700, 15px, 1.6, 0.01em);
     }
+}
+
+.swiper-button-prev::after,.swiper-button-next::after  { 
+    font-size: 20px;
+}
+.swiper-button-prev,.swiper-button-next { 
+    color: #D1D5D9;
+}
+
+.swiper-pagination { 
+    bottom: 0;
+}
+.swiper-pagination-bullet { 
+    width: 10px;
+    height: 10px;
+    line-height: 1.5;
+    background-color: var(--secondary-accent-color);
 }

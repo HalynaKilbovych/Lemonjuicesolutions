@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p,
 h1,
 h2,
@@ -315,7 +316,7 @@ address {
 .mob-menu__address-link {
   font-size: 15px;
   line-height: 24px;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .header-top {
@@ -626,7 +627,6 @@ address {
   background-image: url("../img/logo-bg.png"), url("../img/logo-bg.png");
   background-repeat: no-repeat;
   background-position: 50% 30%, 130% 130%;
-  padding: 100px 0px;
 }
 @media screen and (min-width: 1200px) {
   .benefits {
@@ -791,52 +791,34 @@ address {
   .testimonials__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 160px;
   }
 }
 .testimonials__title {
   margin-bottom: 50px;
   text-align: center;
 }
-.testimonials__list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 30px;
+
+.swiper {
+  padding: 0 40px 50px;
 }
-@media screen and (min-width: 768px) {
-  .testimonials__list {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-.testimonials__item {
-  width: 100%;
+.swiper__item {
   padding: 35px;
   background-color: var(--primary-background-color);
 }
-@media screen and (min-width: 768px) {
-  .testimonials__item {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .testimonials__item {
-    width: 374px;
-  }
-}
-.testimonials__img {
+.swiper__img {
   width: 120px;
   height: 120px;
   margin-bottom: 26px;
   margin-left: auto;
   margin-right: auto;
 }
-.testimonials__subtitle, .testimonials__text, .testimonials__name {
+.swiper__subtitle, .swiper__text, .swiper__name {
   text-align: center;
   color: var(--text-color);
 }
-.testimonials__subtitle {
+.swiper__subtitle {
   margin-bottom: 8px;
   font-family: "Playfair Display";
   font-weight: 700;
@@ -844,20 +826,112 @@ address {
   line-height: 1.3;
   letter-spacing: 0.01em;
 }
-.testimonials__text {
+.swiper__text {
   margin-bottom: 14px;
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.01em;
 }
-.testimonials__name {
+.swiper__name {
   font-weight: 700;
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.01em;
 }
 
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 20px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #D1D5D9;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  line-height: 1.5;
+  background-color: var(--secondary-accent-color);
+}
+
+.faq-section {
+  padding: 40px 0;
+}
+@media screen and (min-width: 1200px) {
+  .faq-section__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+.faq-section__wrapper {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .faq-section__wrapper {
+    display: block;
+    width: 50%;
+  }
+}
+
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .faq {
+    width: 50%;
+  }
+}
+.faq__title {
+  margin-bottom: 30px;
+}
+.faq__question {
+  background-color: #F6F7EB;
+  cursor: pointer;
+  padding: 18px 15px;
+  width: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.faq__answer {
+  padding: 20px 10px 0px;
+  background-color: var(--primary-background-color);
+  display: none;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.active,
+.faq__question:hover {
+  background-color: #F9F9F9;
+}
+
+.faq__question:after {
+  content: "›";
+  font-size: 15px;
+  color: #828282;
+  float: right;
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active:after {
+  content: "›";
+  transform: rotate(90deg);
+}
+
 .form {
+  background-color: var(--secondary-background-color);
   padding: 65px 0;
 }
 .form__title {
@@ -867,7 +941,6 @@ address {
 .form__subtitle {
   margin-bottom: 30px;
   text-align: center;
-  color: var(--text-color);
 }
 .form__text-privacy {
   display: block;
@@ -916,7 +989,6 @@ address {
 }
 .forms__input {
   padding: 10px 35px;
-  color: var(--text-color);
   width: 100%;
   border: 1px solid #E7E7E7;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
