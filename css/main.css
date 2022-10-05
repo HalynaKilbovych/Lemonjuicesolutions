@@ -1139,4 +1139,21 @@ address {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+.page-header__title {
+  text-align: center;
+  color: var(--primary-background-color);
+  margin-bottom: 15px;
+}
+.page-header__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-header__nav-link {
+  color: var(--primary-background-color);
+}
+
+.news--padding {
+  padding: 120px 0;
 }/*# sourceMappingURL=main.css.map */

@@ -7,17 +7,19 @@
   background-position: top;
   background-size: cover;
 
+  &__title {
+    text-align: center;
+    color: var(--primary-background-color);
+    margin-bottom: 15px;
+  }
+  &__nav-list { 
+    @include flex (flex, center, center, null );
+  }
+  &__nav-link { 
+    color: var(--primary-background-color);
+  }
 }
-.page-header__title {
-}
-.title {
-}
-.page-header__nav-list {
-}
-.list {
-}
-.page-header__nav-item {
-}
-.page-header__nav-link { 
 
+.news--padding { 
+  padding: 120px 0;
 }
