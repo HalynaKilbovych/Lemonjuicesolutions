@@ -5,6 +5,7 @@
 @import './components/container';
 @import './components/btn';
 @import './components/title';
+@import './components/description';
 
 @import './utils/mixin';
 @import './utils/variables';
@@ -24,4 +25,4 @@
 @import './layout/footer';
 
 
-@import './layout/news/news.scss';
+@import './layout/pages/news.scss';
